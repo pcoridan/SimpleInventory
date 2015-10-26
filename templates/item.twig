@@ -1,0 +1,27 @@
+
+{% extends 'main.twig' %}
+
+
+  {% block content %}
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Distributor</th>
+    <th>Location</th>
+
+</tr>
+	{% for i in item %}
+<tr>
+    <td>{{ i.name }}</td>
+    <td>{{ i.price }}</td>
+    <td>{{ i.distributor }}</td>
+    <td>{{ i.location }}</td>
+</tr>
+    {% endfor %}
+</table>
+
+  {% endblock content %}
+
+
